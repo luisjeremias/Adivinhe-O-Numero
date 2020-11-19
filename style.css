@@ -1,3 +1,5 @@
+
+
 #number-guess,
 #result,
 #history{
@@ -8,10 +10,18 @@
   margin-top: 16px;
 }
 #number-guess{
+  border-radius: 5px;
   text-align: center;
   font-size: 27px;
   
 }
+#restart-game{
+  background-color: #04cdff;
+}
+#number-submit{
+   background-color: #33dd41;
+}
+
 .banner {
   color: #4aedf8da;
   font-size: 90px;

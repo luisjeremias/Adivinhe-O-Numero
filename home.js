@@ -35,7 +35,6 @@ function playGame(){
   displayResult(numberGuess);
   saveGuessHistory(numberGuess);
   displayHistory();
-   document.getElementById('cancel-text').style.display = "block";
  
 }
 
@@ -52,7 +51,6 @@ function displayResult(numberGuess){
     showNumberBelow();
   }else if (numberGuess == correctNumber){
     showYouWon();
-    document.getElementById("cancel").style.display = "none";
   }
 }
 
@@ -67,11 +65,9 @@ function initGame(){
   document.getElementById('number-guess').value = "";
   document.getElementById("result").innerHTML = "";
   let cancelText = document.getElementById('cancel-text');
-  document.getElementById('number-guess').style.display = "block";
   cancelText.innerHTML = " ";
   guesses = [];
   displayHistory();
-  
 
 
 }
@@ -79,7 +75,7 @@ function cancelGame(){
   let cancelText = document.getElementById('cancel-text');
 
   cancelText.innerHTML = "Você desistiu 😒.. o numero foi " + correctNumber;
-  document.getElementById('number-guess').style.display = "none";
+ 
 }
 /**
  * Reset the HTML content for guess history
