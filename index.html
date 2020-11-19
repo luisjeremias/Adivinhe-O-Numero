@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Adivinhe O Numero</title>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    
+    
+</head>
+<body class="text-center">
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <a class="navbar-brand" href="index.html">Adivinhe O Numero</a>
+        <a class="navbar-brand" href="how.html">Como Jogar?</a>
+    </nav>
+    <main>
+        <h1 class="banner p-3">1 2 3</h1>
+        <h2 id="cancel-text"></h2>
+        <div class="form-group ">
+            <input id="number-guess"  class="form-control form-control-lg" type="number" placeholder="Qual é o numero?" >
+        </div>
+        <div id="result">
+            <!-- This is where the result will be-->
+        </div>
+        <button type="button" id="number-submit" class="btn btn-lg btn-success">Checar</button>
+        <button type="button" id="restart-game" class="btn btn-lg btn-primary">Reiniciar</button>
+         <button type="button" id="cancel" class="btn btn-lg btn-outline-danger">Desistir</button>
+        <div id="history">
+            <!-- This is where the guess history will be-->
+        </div>
+    </main>
+    <script src="home.js"></script>
+    
+</body>
+</html>
